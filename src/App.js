@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Message from './components/Message.jsx';
 import ListeDesArticles from './components/ListeDesArticles.jsx';
+import StatutUtilisateur from './components/StatutUtilisateur.jsx';
 
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
     { titre: 'Article 6', description: 'Description de l\'article 6', prix: 12 ,  stocke : 10, image: 'https://sportal.es/wp-content/uploads/2025/04/cristiano-ronaldo_1311285Photogallery-1.webp' },
     { titre: 'Article 7', description: 'Description de l\'article 7', prix: 18 ,  stocke : 10, image: 'https://sportal.es/wp-content/uploads/2025/04/cristiano-ronaldo_1311285Photogallery-1.webp' },
   ];
-    
+    const estconnecte = false;
   
   return (
     <div>
+      <StatutUtilisateur estConnecte={estconnecte} />
       <Message user="SOULEYMANE DIOP " />
       <ListeDesArticles  articles2 = {articles2}/>
+      
 
     </div>
   );

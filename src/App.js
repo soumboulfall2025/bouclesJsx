@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Message from './components/Message.jsx';
 import ListeDesArticles from './components/ListeDesArticles.jsx';
 import StatutUtilisateur from './components/StatutUtilisateur.jsx';
+import Button from './components/Button.jsx';
+import Login from './components/Login.jsx';
 
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
   
   return (
     <div>
+      <Login />
+      <Button text="Se connecter" onClick={() => alert("Vous êtes connecté")} />
+      <Button text="Se déconnecter" onClick={() => alert("Vous êtes déconnecté")} />
       <StatutUtilisateur estConnecte={estconnecte} />
       <Message user="SOULEYMANE DIOP " />
       <ListeDesArticles  articles2 = {articles2}/>

@@ -1,0 +1,11 @@
+   return (
+        <ul>
+            {articles2.map((article2, index) => (
+                <li key={index}>
+                    <h2>{article2.titre}</h2>
+                    <p>{article2.description}</p>
+                    <p>Prix: {article2.prix} €</p>
+                </li>
+            ))}
+        </ul>
+    );
